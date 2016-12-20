@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>链家-登录</title>
+    <link rel="stylesheet" href="frameworks/bootstrap-3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="frameworks/jquery/jquery.min.js"></script>
+    <script src="js/styleController.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="header header-common">
+                <!--左侧的logo以及选择-->
+                <div class="left_box">
+                    <div class="logo">
+                        <img src="resources/images/logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row main-body">
+        <div class="tabs">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="#">普通登录</a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="#">验证码快捷登录</a>
+                </div>
+            </div>
+            <div class="row border">
+                <div class="col-xs-6 active"></div>
+                <div class="col-xs-6"></div>
+            </div>
+        </div>
+        <form action="" class="login-form active">
+            <div class="row singleLine">
+                <div class="col-xs-11 left col-xs-offset-1">
+                    <input type="text" placeholder="请输入手机号" class="borderless form-control">
+                </div>
+            </div>
+            <div class="row singleLine last">
+                <div class="col-xs-11 left col-xs-offset-1">
+                    <input type="text" placeholder="请输入登录密码 " class="borderless form-control">
+                </div>
+            </div>
+            <div class="row singleLine btn-row">
+                <button class="btn btn-block btn-success">
+                    立即登录
+                </button>
+            </div>
+        </form>
+        <form action="" class="login-form">
+            <div class="row singleLine">
+                <div class="col-xs-6 left col-xs-offset-1">
+                    <input type="text" placeholder="请输入手机号" class="borderless form-control">
+                </div>
+                <div class="col-xs-5 right msg">
+                    <button id="msgButton" type="button" class="btn btn-default" >发送验证码</button>
+                </div>
+            </div>
+            <div class="row singleLine last">
+                <div class="col-xs-11 left col-xs-offset-1">
+                    <input type="text" placeholder="请输入验证码 " class="borderless form-control">
+                </div>
+            </div>
+            <div class="row singleLine btn-row">
+                <button class="btn btn-block btn-success">
+                    立即登录
+                </button>
+            </div>
+        </form>
+        <div class="row singleLine btn-row">
+            <div class="col-xs-8">
+                <a href="#"><span class="txt-green">立即注册</span></a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">忘记密码</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

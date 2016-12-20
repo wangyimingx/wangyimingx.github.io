@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>链家-注册</title>
+    <link rel="stylesheet" href="frameworks/bootstrap-3.3.0/css/bootstrap.min.css">
+    <script src="frameworks/jquery/jquery.min.js"></script>
+    <script src="frameworks/bootstrap-3.3.0/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/styleController.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header header-common">
+                    <!--左侧的logo-->
+                    <div class="left_box">
+                        <div class="logo">
+                            <img src="resources/images/logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row main-body">
+            <!--表单-->
+            <form action="">
+                <!--行-->
+                <div class="row singleLine">
+                    <div class="col-xs-6 left col-xs-offset-1">
+                        <input type="text" placeholder="请输入手机号" class="borderless form-control">
+                    </div>
+                    <div class="col-xs-5 right msg">
+                        <button id="msgButton" type="button" class="btn btn-default" data-container="body"
+                                data-toggle="popover" data-placement="right"
+                                data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">发送验证码</button>
+                    </div>
+                </div>
+                <div class="row singleLine ">
+                    <div class="col-xs-11 left col-xs-offset-1">
+                        <input type="text" placeholder="请输入短信验证码" class="borderless form-control">
+                    </div>
+                </div>
+                <div class="row singleLine last">
+                    <div class="col-xs-11 left col-xs-offset-1">
+                        <input type="text" placeholder="请输入登录密码 " class="borderless form-control">
+                    </div>
+                </div>
+                <!--按钮-->
+                <div class="row singleLine btn-row">
+                    <button class="btn btn-block btn-success">
+                        立即注册
+                    </button>
+                </div>
+            </form>
+            <!--下方提示信息-->
+            <div class="row singleLine btn-row">
+                <div class="col-xs-8">
+                    已有链家账号？<a href="#"><span class="txt-green">立即登录</span></a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#">忘记密码</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>

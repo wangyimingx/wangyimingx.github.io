@@ -1,0 +1,65 @@
+#header{
+    background-color: #00AE66;
+}
+
+#header>div>div{
+    background-color:#00AE66;
+    color:#fff;
+    padding: 15px 0;
+}
+#header>div>div:hover{
+    cursor: pointer;
+}
+
+#header>div>a>img{
+    margin: 17px 0;
+}
+
+#header>div>a>ul{
+    margin: 5px 5px;
+    color: #fff;
+}
+
+
+div#ads{
+    padding: 0;
+}
+div#ads>img{
+   width:100%;
+}
+
+
+#advertisement{
+    border-bottom: 1px solid #EBEBEB;
+    border-top: 1px solid #EBEBEB;
+    background-color: #F9F9F9;
+}
+#advertisement>div>div{
+    padding:18px 5px 0 0;
+}
+#advertisement>div>div:nth-child(2){
+   border-left: 1px solid #DCDCDC;
+}
+
+
+#introduce{
+    border-bottom: 1px solid #DCDCDC;
+}
+#introduce>div{
+    margin: 10px 0;
+    border-right: 1px solid #DCDCDC;
+}
+
+#introduce>div:last-child{
+    border-right:none;
+}
+#introduce>div>ul>li:nth-child(2){
+    color:#DE6843;
+}
+
+#house_info>div.row{
+
+    height:50px;
+    border-bottom: 1px solid #DCDCDC;
+    line-height: 50px;
+}

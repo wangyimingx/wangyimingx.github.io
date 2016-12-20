@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>链家-列表页</title>
+    <link rel="stylesheet" href="frameworks/bootstrap-3.3.0/css/bootstrap.min.css">
+    <script src="frameworks/jquery/jquery.min.js"></script>
+    <script src="frameworks/bootstrap-3.3.0/js/bootstrap.min.js"></script>
+    <!--自定义-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/styleController.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <!--头部-->
+    <header class="row">
+        <div class="col-xs-12">
+            <div class="header header-common">
+                <!--左侧的logo以及选择-->
+                <div class="left_box">
+                    <div class="logo">
+                        <img src="resources/images/logo.png" alt="">
+                    </div>
+                    <a href="#">
+                        上海 <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                </div>
+                <!--下载app-->
+                <div class="col-xs-6 col-xs-offset-6 options opt-two">
+                    <ul class="list-unstyled pull-right">
+                        <li class="glyphicon glyphicon-download"></li>
+                        <li>APP</li>
+                    </ul>
+                    <ul class="list-unstyled pull-right">
+                        <li class="glyphicon glyphicon-user"></li>
+                        <li>我的</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--搜索框-->
+    <section>
+        <div class="row search-box">
+            <div class="input-group search-group">
+                <input type="text" class="form-control" placeholder="请输入小区或者板块名">
+                <label  class="input-group-addon">
+                    <span class="glyphicon glyphicon-search"></span>
+                </label>
+            </div>
+        </div>
+    </section>
+    <!--条件-->
+    <section class="col-dropdown ">
+        <div class="row text-center condition dropdown">
+               <div class="col-xs-3 choice " >
+                   <a href="#" data-toggle="dropdown">区域 <span class="caret"></span></a>
+                  <!--下拉菜单1-->
+                   <ul class="dropdown-menu">
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   不限
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   黄浦区
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   虹口区
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   青浦区
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   徐汇区
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li class="item-btn">
+                           <button class="btn btn-success btn-block">确定</button>
+                       </li>
+                   </ul>
+               </div>
+               <div class="col-xs-3 choice"  >
+                   <a href="#" data-toggle="dropdown">总价 <span class="caret"></span></a>
+                   <!--下拉菜单1-->
+                   <ul class="dropdown-menu">
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   不限
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   500万以下
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   500万~1000万
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   1000万以上
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li class="item-btn">
+                           <button class="btn btn-success btn-block">确定</button>
+                       </li>
+                   </ul>
+               </div>
+               <div class="col-xs-3 choice"  >
+                   <a href="#"  data-toggle="dropdown">户型 <span class="caret"></span></a>
+                   <!--下拉菜单1-->
+                   <ul class="dropdown-menu">
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   不限
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   一室
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   二室
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   三室
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li class="item-btn">
+                          <button class="btn btn-success btn-block">确定</button>
+                       </li>
+                   </ul>
+               </div>
+               <div class="col-xs-3 choice last"   >
+                   <a href="#" data-toggle="dropdown">更多 <span class="caret"></span></a>
+                   <!--下拉菜单1-->
+                   <ul class="dropdown-menu">
+                       <li>
+                           <a href="#" data-toggle="collapse" data-target="#col-menu">
+                               <label class="checkLabel">
+                                   不限
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   发布时间
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                    面积大小
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="#">
+                               <label class="checkLabel">
+                                   楼层
+                                   <input type="checkbox">
+                               </label>
+                           </a>
+                       </li>
+                       <li class="item-btn">
+                           <button class="btn btn-success btn-block">确定</button>
+                       </li>
+                   </ul>
+               </div>
+        </div>
+
+    </section>
+    <!--列表-->
+    <section class="lists">
+        <div class="media">
+            <a href="#">
+                <div class="media-left">
+                    <img  class="media-object" src="resources/images/list_01.png" alt="">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">成熟社区，诚意出售，闹中取静，啦啦啦啦</h4>
+                    <p><small>2室1厅 72m³南</small></p>
+                    <p>
+                        <small>东力新村</small>
+                        <span class="price">310万</span>
+                    </p>
+                    <p><span class="text text-blue"><small>满五</small></span>
+                        <span class="text text-orange"><small>地铁房</small></span>
+                        <span class="text text-blue"><small>有钥匙</small></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="media">
+            <a href="#">
+                <div class="media-left">
+                    <img  class="media-object" src="resources/images/list_01.png" alt="">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">成熟社区，诚意出售，闹中取静，啦啦啦啦</h4>
+                    <p><small>2室1厅 72m³南</small></p>
+                    <p>
+                        <small>东力新村</small>
+                        <span class="price">310万</span>
+                    </p>
+                    <p><span class="text text-blue"><small>满五</small></span>
+                        <span class="text text-orange"><small>地铁房</small></span>
+                        <span class="text text-blue"><small>有钥匙</small></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="media">
+            <a href="#">
+                <div class="media-left">
+                    <img  class="media-object" src="resources/images/list_01.png" alt="">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">成熟社区，诚意出售，闹中取静，啦啦啦啦</h4>
+                    <p><small>2室1厅 72m³南</small></p>
+                    <p>
+                        <small>东力新村</small>
+                        <span class="price">310万</span>
+                    </p>
+                    <p><span class="text text-blue"><small>满五</small></span>
+                        <span class="text text-orange"><small>地铁房</small></span>
+                        <span class="text text-blue"><small>有钥匙</small></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="media">
+            <a href="#">
+                <div class="media-left">
+                    <img  class="media-object" src="resources/images/list_01.png" alt="">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">成熟社区，诚意出售，闹中取静，啦啦啦啦</h4>
+                    <p><small>2室1厅 72m³南</small></p>
+                    <p>
+                        <small>东力新村</small>
+                        <span class="price">310万</span>
+                    </p>
+                    <p><span class="text text-blue"><small>满五</small></span>
+                        <span class="text text-orange"><small>地铁房</small></span>
+                        <span class="text text-blue"><small>有钥匙</small></span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="bg">
+
+        </div>
+    </section>
+</div>
+</body>
+</html>
